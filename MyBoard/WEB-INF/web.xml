@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+
+
+	<servlet>
+        <servlet-name>BoardList</servlet-name>
+        <servlet-class>com.sv.board.BoardList</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BoardList</servlet-name>
+        <url-pattern>/list.do</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>BoardContent</servlet-name>
+        <servlet-class>com.sv.board.BoardContent</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BoardContent</servlet-name>
+        <url-pattern>/content.do</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>BoardWrite</servlet-name>
+        <servlet-class>com.sv.board.BoardWrite</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BoardWrite</servlet-name>
+        <url-pattern>/write.do</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>BoardContentDel</servlet-name>
+        <servlet-class>com.sv.board.BoardContentDel</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BoardContentDel</servlet-name>
+        <url-pattern>/del.do</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>BoardContentUpd</servlet-name>
+        <servlet-class>com.sv.board.BoardContentUpd</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BoardContentUpd</servlet-name>
+        <url-pattern>/update.do</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
