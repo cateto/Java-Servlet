@@ -14,6 +14,9 @@
 	   <br/>
 	   <br/>
 		
+		<a href="board_listing/board.do?cp=1&ps=3"><img src='https://mblogthumb-phinf.pstatic.net/MjAxOTA3MDNfMTAw/MDAxNTYyMTUyNzEzODY1.mMekpyS3sVXTgwrd9C0xgToDp-0dq3EOvf4iIFKDLP4g.wlWcLtghO56PQwyOT0xfHN_z6l3qitVVGJk0chJG7tMg.PNG.krla12q/20190703_201812.png?type=w800'></a>
+		<br/>
+		
 		<a href="board_mvc/board.do"><img src='https://i.ytimg.com/vi/-6CS1er1-RE/hqdefault.jpg'></a>
 		<br/>
 		
