@@ -1,0 +1,23 @@
+<<<<<미션 : 리스트 페이징(페이지 넘어가는 것) 구현 >>>>>>>>
+
+궁금증 1 : 페이징 쿼리문 어떻게 활용할 것인가?
+
+"select * from (select ROWNUM rnum, aa.* from (select * from BOARD order by SEQ desc) aa) where rnum>? and rnum<=?"
+
+(참고된 사이트 : https://wjheo.tistory.com/entry/%EA%B2%8C%EC%8B%9C%ED%8C%90-%ED%8E%98%EC%9D%B4%EC%A7%95-%EC%B2%98%EB%A6%AC-oracle-DB 
+
+"이 분의 방식은 솔직히 말하면 서브쿼리에서 전체 다 불러오는 거긴 한데... 그냥 쿼리 생성 과정에 대한 정보를 얻을 수있음.. "
+"한줄 요약 : 로우 넘버는 차례차례로 오라클에 의해 주어진다 ! " )
+
+
+"이제 구현되는 것은.... 페이지에 cp, ps를 활용해서 원하는 만큼 씩 출력하게 됨 !"
+
+궁금증 2 : 세션 작동 순서 파악하고 어떻게 활용할 것인가?
+1. 세션 얻어오기 (boardcontroller에서 사용자가 접속하는 첫 페이지 (=BoardList.jsp)에서 생성할 것임.
+HttpSession session = request.getSession(true);
+2. 세션 속성 활용하기 
+선생님 소스 복붙... "세션 어떻게 받아왔는지 아직도 모르겠어!!!!!!!!!!!!!!" 내일 선생님께 제발 설명 부탁;;;.....
+
+궁금증 3 :  ListResult.java 파일의 정체는 무엇인가?
+
+mvc.domain.Board.java와 같은 페이징을 위한 도메인 소스라고 추측된다...
